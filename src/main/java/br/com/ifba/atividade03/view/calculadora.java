@@ -8,6 +8,7 @@ package br.com.ifba.atividade03.view;
  *
  * @author sunhe
  */
+import java.time.LocalDate;
 public class calculadora extends javax.swing.JPanel {
 
     /**
@@ -26,16 +27,19 @@ public class calculadora extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        txtNum1 = new javax.swing.JLabel();
-        txtNum2 = new javax.swing.JLabel();
+        txtTextoInserir = new javax.swing.JLabel();
+        txtNumNascimento = new javax.swing.JLabel();
         btnCalcular = new javax.swing.JButton();
+        txtTextoResultado2 = new javax.swing.JLabel();
+        txtResultado = new javax.swing.JLabel();
+        txtTextoResultado = new javax.swing.JLabel();
 
-        txtNum1.setFont(new java.awt.Font("Garamond", 1, 12)); // NOI18N
-        txtNum1.setText("INSIRA O ANO DO SEU NASCIMENTO:");
-        txtNum1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtTextoInserir.setFont(new java.awt.Font("Garamond", 1, 12)); // NOI18N
+        txtTextoInserir.setText("INSIRA O ANO DO SEU NASCIMENTO:");
+        txtTextoInserir.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        txtNum2.setFont(new java.awt.Font("Garamond", 1, 12)); // NOI18N
-        txtNum2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtNumNascimento.setFont(new java.awt.Font("Garamond", 1, 12)); // NOI18N
+        txtNumNascimento.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         btnCalcular.setFont(new java.awt.Font("Garamond", 1, 14)); // NOI18N
         btnCalcular.setText("CALCULAR");
@@ -45,6 +49,15 @@ public class calculadora extends javax.swing.JPanel {
             }
         });
 
+        txtTextoResultado2.setFont(new java.awt.Font("Garamond", 1, 18)); // NOI18N
+        txtTextoResultado2.setText("anos.");
+
+        txtResultado.setFont(new java.awt.Font("Garamond", 1, 12)); // NOI18N
+        txtResultado.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        txtTextoResultado.setFont(new java.awt.Font("Garamond", 1, 18)); // NOI18N
+        txtTextoResultado.setText("A sua idade é:");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -53,12 +66,19 @@ public class calculadora extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(txtNum1)
+                        .addComponent(txtTextoInserir)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(txtNum2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtNumNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(123, 123, 123)
-                        .addComponent(btnCalcular, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(96, 96, 96)
+                        .addComponent(btnCalcular, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(44, 44, 44)
+                        .addComponent(txtTextoResultado)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtTextoResultado2)))
                 .addContainerGap(94, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -66,22 +86,32 @@ public class calculadora extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(69, 69, 69)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txtNum1, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
-                    .addComponent(txtNum2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(29, 29, 29)
+                    .addComponent(txtTextoInserir, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
+                    .addComponent(txtNumNascimento, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(31, 31, 31)
                 .addComponent(btnCalcular, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(127, Short.MAX_VALUE))
+                .addGap(31, 31, 31)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txtTextoResultado2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txtResultado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txtTextoResultado, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE))
+                .addContainerGap(59, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
         // TODO add your handling code here:
+        int ano = Integer.parseInt(txtNumNascimento.getText());
+
     }//GEN-LAST:event_btnCalcularActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCalcular;
-    private javax.swing.JLabel txtNum1;
-    private javax.swing.JLabel txtNum2;
+    private javax.swing.JLabel txtNumNascimento;
+    private javax.swing.JLabel txtResultado;
+    private javax.swing.JLabel txtTextoInserir;
+    private javax.swing.JLabel txtTextoResultado;
+    private javax.swing.JLabel txtTextoResultado2;
     // End of variables declaration//GEN-END:variables
 }

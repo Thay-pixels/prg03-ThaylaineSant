@@ -20,13 +20,21 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="txtNum1" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtTextoInserir" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="txtNum2" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="txtNumNascimento" min="-2" pref="55" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="123" max="-2" attributes="0"/>
-                      <Component id="btnCalcular" min="-2" pref="142" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
+                      <Component id="btnCalcular" min="-2" pref="183" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                      <Component id="txtTextoResultado" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="txtResultado" min="-2" pref="55" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="txtTextoResultado2" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="94" max="32767" attributes="0"/>
@@ -38,18 +46,24 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="txtNum1" pref="28" max="32767" attributes="0"/>
-                  <Component id="txtNum2" max="32767" attributes="0"/>
+                  <Component id="txtTextoInserir" pref="28" max="32767" attributes="0"/>
+                  <Component id="txtNumNascimento" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
               <Component id="btnCalcular" min="-2" pref="47" max="-2" attributes="0"/>
-              <EmptySpace pref="127" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="txtTextoResultado2" max="32767" attributes="0"/>
+                  <Component id="txtResultado" max="32767" attributes="0"/>
+                  <Component id="txtTextoResultado" alignment="0" pref="35" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace pref="59" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="txtNum1">
+    <Component class="javax.swing.JLabel" name="txtTextoInserir">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Garamond" size="12" style="1"/>
@@ -62,7 +76,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="txtNum2">
+    <Component class="javax.swing.JLabel" name="txtNumNascimento">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Garamond" size="12" style="1"/>
@@ -84,6 +98,34 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCalcularActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="txtTextoResultado2">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Garamond" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="anos."/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="txtResultado">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Garamond" size="12" style="1"/>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="txtTextoResultado">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Garamond" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="A sua idade &#xe9;:"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>
