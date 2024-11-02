@@ -106,17 +106,18 @@ public class calculadora extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNascUSerActionPerformed
 
+    //Código para a ação de calcular a idade do usuário.
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
         // TODO add your handling code here:
         
-        //Pegando a data atual assim que o programa for iniciado.
+        //Pegando a data atual para calcular a idade.
         LocalDate dataAtual = LocalDate.now(); 
         int anoAtt = dataAtual.getYear();
         
         //Pegando o ano de nascimento do usuário.
         int anoUser = Integer.parseInt(txtNascUSer.getText());
         
-        int resultado = anoAtt - anoUser;
+        int resultado = anoAtt - anoUser;//Calculando a idade.
         
         //Exibindo o resultado.
         if(resultado < 0){
