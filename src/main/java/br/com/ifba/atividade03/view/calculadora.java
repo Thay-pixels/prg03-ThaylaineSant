@@ -1,6 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package br.com.ifba.atividade03.view;
 
@@ -9,7 +9,7 @@ package br.com.ifba.atividade03.view;
  * @author sunhe
  */
 import java.time.LocalDate;
-public class calculadora extends javax.swing.JPanel {
+public class calculadora extends javax.swing.JFrame {
 
     /**
      * Creates new form calculadora
@@ -27,91 +27,143 @@ public class calculadora extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        txtTextoInserir = new javax.swing.JLabel();
-        txtNumNascimento = new javax.swing.JLabel();
+        lblInfo = new javax.swing.JLabel();
         btnCalcular = new javax.swing.JButton();
-        txtTextoResultado2 = new javax.swing.JLabel();
-        txtResultado = new javax.swing.JLabel();
-        txtTextoResultado = new javax.swing.JLabel();
+        lblInfo2 = new javax.swing.JLabel();
+        lblResult = new javax.swing.JLabel();
+        txtAnoNasc = new javax.swing.JTextField();
 
-        txtTextoInserir.setFont(new java.awt.Font("Garamond", 1, 12)); // NOI18N
-        txtTextoInserir.setText("INSIRA O ANO DO SEU NASCIMENTO:");
-        txtTextoInserir.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        txtNumNascimento.setFont(new java.awt.Font("Garamond", 1, 12)); // NOI18N
-        txtNumNascimento.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        lblInfo.setFont(new java.awt.Font("Modern No. 20", 1, 12)); // NOI18N
+        lblInfo.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblInfo.setText("INSIRA A SUA DATA DE NASCIMENTO:");
 
-        btnCalcular.setFont(new java.awt.Font("Garamond", 1, 14)); // NOI18N
+        btnCalcular.setFont(new java.awt.Font("Modern No. 20", 1, 15)); // NOI18N
         btnCalcular.setText("CALCULAR");
+        btnCalcular.setBorder(null);
         btnCalcular.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCalcularActionPerformed(evt);
             }
         });
 
-        txtTextoResultado2.setFont(new java.awt.Font("Garamond", 1, 18)); // NOI18N
-        txtTextoResultado2.setText("anos.");
+        lblInfo2.setFont(new java.awt.Font("Modern No. 20", 1, 14)); // NOI18N
+        lblInfo2.setText("A SUA IDADE É: ");
 
-        txtResultado.setFont(new java.awt.Font("Garamond", 1, 12)); // NOI18N
-        txtResultado.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtAnoNasc.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtAnoNasc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAnoNascActionPerformed(evt);
+            }
+        });
 
-        txtTextoResultado.setFont(new java.awt.Font("Garamond", 1, 18)); // NOI18N
-        txtTextoResultado.setText("A sua idade é:");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(txtTextoInserir)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(txtNumNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(22, 22, 22)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblInfo)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtAnoNasc, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblInfo2, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblResult, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(96, 96, 96)
-                        .addComponent(btnCalcular, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(44, 44, 44)
-                        .addComponent(txtTextoResultado)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtTextoResultado2)))
-                .addContainerGap(94, Short.MAX_VALUE))
+                        .addGap(120, 120, 120)
+                        .addComponent(btnCalcular, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(69, 69, 69)
+                .addGap(72, 72, 72)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txtTextoInserir, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
-                    .addComponent(txtNumNascimento, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(31, 31, 31)
-                .addComponent(btnCalcular, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txtTextoResultado2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(txtResultado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(txtTextoResultado, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE))
-                .addContainerGap(59, Short.MAX_VALUE))
+                    .addComponent(lblInfo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txtAnoNasc, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE))
+                .addGap(27, 27, 27)
+                .addComponent(btnCalcular, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblInfo2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblResult, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(58, 58, 58))
         );
+
+        pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
         // TODO add your handling code here:
-        int ano = Integer.parseInt(txtNumNascimento.getText());
-
+        
+        //Pegando a data atual assim que o programa for iniciado.
+        LocalDate dataAtual = LocalDate.now(); 
+        int anoAtt = dataAtual.getYear();
+        
+        //Pegando o ano de nascimento do usuário.
+        int anoUser = Integer.parseInt(txtAnoNasc.getText());
+        
+        //Fazendo o cálculo de idade.
+        int resultado = anoAtt - anoUser;
+        
+        if(resultado < 0){
+            lblResult.setText("Ano de nascimento inválido!");
+        }else{
+            lblResult.setText(Integer.toString(resultado));
+        }
+        
     }//GEN-LAST:event_btnCalcularActionPerformed
 
+    private void txtAnoNascActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAnoNascActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAnoNascActionPerformed
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(calculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(calculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(calculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(calculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new calculadora().setVisible(true);
+            }
+        });
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCalcular;
-    private javax.swing.JLabel txtNumNascimento;
-    private javax.swing.JLabel txtResultado;
-    private javax.swing.JLabel txtTextoInserir;
-    private javax.swing.JLabel txtTextoResultado;
-    private javax.swing.JLabel txtTextoResultado2;
+    private javax.swing.JLabel lblInfo;
+    private javax.swing.JLabel lblInfo2;
+    private javax.swing.JLabel lblResult;
+    private javax.swing.JTextField txtAnoNasc;
     // End of variables declaration//GEN-END:variables
 }
