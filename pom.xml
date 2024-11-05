@@ -10,5 +10,4 @@
         <maven.compiler.release>23</maven.compiler.release>
         <exec.mainClass>com.mycompany.atividade03.Atividade03</exec.mainClass>
     </properties>
-    <name>atividade</name>
 </project>
