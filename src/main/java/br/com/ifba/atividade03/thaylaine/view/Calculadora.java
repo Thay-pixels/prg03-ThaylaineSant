@@ -95,8 +95,12 @@ public class Calculadora extends javax.swing.JFrame {
                 .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblInfoResultado3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< Updated upstream:src/main/java/br/com/ifba/atividade03/thaylaine/view/Calculadora.java
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(lblInfo2, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)))
+=======
+                    .addComponent(lblInfo2, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
+>>>>>>> Stashed changes:src/main/java/br/com/ifba/atividade03/view/calculadora.java
                 .addGap(41, 41, 41))
         );
 
